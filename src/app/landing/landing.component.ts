@@ -13,7 +13,7 @@ import { HeaderComponent } from '../header/header.component';
 export class LandingComponent {
   title = 'metudeut';
   buttons = [
-    { name: "Lese Über Metu Deutsch / Read About Metu Deutsch", value:"/faq-en-component", ico_url: "../assets/Deutsch2.png", style: "background-color: #f5f5f5; color: black;"},
+    { name: "Lese Über Metu Deutsch / Read About Metu Deutsch", value:"/faq-component", ico_url: "../assets/Deutsch2.png", style: "background-color: #f5f5f5; color: black;"},
     { name: 'Folgen Unsere Instagram Seite / Follow Our Instagram Page', value: 'https://www.instagram.com/metu_deutsch/', ico_url: "https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico" },
     { name: '"Nur" Deutsch WP Gruppe / Only German WP Group', value: 'https://chat.whatsapp.com/COtxkSLWE0i6zZ84A9aWT9', ico_url: "../assets/wp.svg" },
     { name: 'Anderer WP Gruppe / Other WP Group', value: 'https://chat.whatsapp.com/F8i0FhuHVn78cMlwbxNX7L', ico_url: "../assets/wp.svg" },
