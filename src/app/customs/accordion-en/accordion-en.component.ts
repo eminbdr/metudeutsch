@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: '../accordion.component.scss'
 })
 export class AccordionEnComponent {
-
+  constructor(){
+    
+  }
 }

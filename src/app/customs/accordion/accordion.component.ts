@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-accordion',
@@ -9,4 +10,4 @@ import { Component } from '@angular/core';
   styleUrl: '../accordion.component.scss'
 })
 export class AccordionComponent {
-}
+  }

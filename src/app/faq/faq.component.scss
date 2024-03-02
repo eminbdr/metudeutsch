@@ -1,44 +1,10 @@
-.zippy-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f2f2f2;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
-  outline: none;
-}
-
-.zippy-btn:focus {
-  box-shadow: 0 0 0 2px #4d90fe;
-}
-
-.zippy-btn .arrow {
-  display: inline-block;
-  transform: rotate(0deg);
-  transition: transform 0.2s ease-in-out;
-}
-
-.zippy-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
-  padding: 10px 20px;
-  box-sizing: border-box;
-}
-
-.zippy-btn.expanded {
-  background-color: #e6f0ff;
-}
-
-.zippy-btn.expanded .arrow {
-  transform: rotate(180deg);
-}
-
-.zippy-btn.expanded + .zippy-content {
-  max-height: 100vh;
+:host{
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.75) 16.7%,
+    rgba(255, 0, 0, 0.75) 50%,
+    rgba(255, 204, 0, 0.75) 83.3%
+  );
 }
 
 div.translator-flag-cont {

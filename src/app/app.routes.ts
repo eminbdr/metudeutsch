@@ -5,5 +5,5 @@ import { FaqenComponent } from './faq/faqen.component';
 export const routes: Routes = [
     { path: '', component: LandingComponent },
     { path: 'faq-component', component: FaqComponent },
-    { path: 'faqen-component', component: FaqenComponent },
+    { path: 'faq-en-component', component: FaqenComponent },
 ];

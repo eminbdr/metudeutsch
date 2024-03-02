@@ -12,4 +12,5 @@ import { FaqComponent } from './faq/faq.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  title = "metudeut"
 }
