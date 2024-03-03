@@ -22,3 +22,37 @@ div.translator-flag-cont {
 
   }
 }
+
+
+a{
+  text-decoration: none;
+}
+.hashtags{
+  color: blue;
+}
+
+div.accordion-body{
+
+  p{
+      text-wrap:wrap;
+      width: inherit;
+      margin-bottom:  10px;
+   
+  }
+  p.first{
+      font-weight: bold;
+  }
+  p.end{
+      margin-bottom: 0px;
+  }
+}
+
+.dLqIok {
+  margin: 0 auto;
+  height: auto;
+  width: 80%;
+}
+
+.accordion{
+  padding-top: 2%;
+}

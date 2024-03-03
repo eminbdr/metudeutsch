@@ -10,7 +10,7 @@
             --heroBackgroundColor: null;
         }
     </style>
-    <div class="sc-bdfBwQ sc-gsTCUz ewSEqQ bhdLno" style="padding-top: 32px; padding-bottom: 32px">
+    <div class="sc-bdfBwQ sc-gsTCUz ewSEqQ bhdLno" style="padding-bottom: 32px">
         <div class="sc-bdfBwQ dLqIok">
             <div class="sc-bdfBwQ sc-eLgOdN la-DUvP fNmjUi" style="
           background: linear-gradient(
@@ -20,13 +20,24 @@
             rgba(255, 204, 0, 0.75) 83.3%
           );
         "></div>
-            <app-header></app-header>
             <div class="translator-flag-cont">
-                <a routerLink="/faq-component"><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt=""></a>
+                <a routerLink="/faq"><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt=""></a>
                 <div style="width: 10px;"></div>
-                <a routerLink="/faq-en-component"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt=""></a>
+                <a routerLink="/faq-en"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt=""></a>
             </div>
-            <app-accordion></app-accordion>
+                <div class="accordion" *ngFor="let faq of faqs; index as qnum">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <a class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse-' + qnum"
+                        aria-expanded="true" aria-controls="collapseTwo" [innerHTML]="faq.question">
+                      </a>
+                    </h2>
+                    <div [attr.id] = "'collapse-'+qnum" class="accordion-collapse collapse">
+                      <div class="accordion-body" [innerHTML]="faq.body">
+                      </div>
+                    </div>
+                  </div>
+                </div>
         </div>
     </div>
 </div>

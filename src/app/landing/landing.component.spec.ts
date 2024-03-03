@@ -21,3 +21,26 @@ describe('LandingComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+import { LandingenComponent } from './landingen.component';
+
+describe('LandingenComponent', () => {
+  let component: LandingenComponent;
+  let fixture: ComponentFixture<LandingenComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [LandingenComponent]
+    })
+    .compileComponents();
+    
+    fixture = TestBed.createComponent(LandingenComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+

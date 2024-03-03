@@ -1,0 +1,15 @@
+div.translator-flag-cont {
+    margin-top: 20px;
+    display: inline-flex;
+    place-content: center;
+    width: 100%;
+    border-width: 5px;
+    border-radius: 10px;
+    $value: 30;
+    img{
+      max-width: 3px*$value;
+      width: 2px*$value;
+      height: 1px*$value;
+  
+    }
+  }
