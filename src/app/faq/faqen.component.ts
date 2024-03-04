@@ -35,9 +35,9 @@ export class FaqenComponent {
     },
     {
       question: 'What is our language learning philosophy?',
-      body: `<p>METU-Deutsch is built around an alternative language learning philosophy that rejects CERF scale (known as A1-C2). While grammar and declarations are a part of language level evaluation according to CERF scale, we believe that grammar is just a tool and declarations are just a matter of practice.
+      body: `<p>METU-Deutsch is built around an alternative language learning philosophy, that promotes "Diving Into" Method. While grammar and declarations are a part of language level evaluation, we believe that grammar is just a tool and declarations are just a matter of practice.
       <br><br>
-      In METU-Deutsch, we are aiming to foster the method what we call "diving into", in which, no matter the one's CERF scale level, people learns vocabulary through their area of interest by pursuing it in German. Once the people accumulate some vocabulary, they will feel the urge to express themselves in German. Only at that point, need for certain grammar knowledge will arise. 
+      In METU-Deutsch, we are aiming to foster the method what we call "diving into", in which, people learns vocabulary through their area of interest by pursuing it in German. Once the people accumulate some vocabulary, they will feel the urge to express themselves in German. Only at that point, need for certain grammar knowledge will arise. 
       
       After enjoying their area of interest and expressing themselves comfortably in German, active use of language will later return themselves as knowledge of declarations and harder grammar concepts.
     </p>`,
@@ -109,7 +109,7 @@ export class FaqenComponent {
     },
 
     {
-      question: 'Can everyone attend speaking clubs?',
+      question: 'Could you host everyone in speaking clubs?',
       body: `As METU-Deutsch, since we are a voluntary project, we have limited resources so that means even if we want, we are not able to host all of our members. Also, as a concept, speaking club itself requires active participants. So we are building a fair system that automatically select active members of the week in which the speaking club will be organized. More details about speaking clubs will be shared with you in detail. Don't forget to attend our only German Whatsapp Group`
     },
     {

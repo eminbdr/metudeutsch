@@ -22,7 +22,7 @@ describe('LandingComponent', () => {
   });
 });
 
-import { LandingenComponent } from './landingen.component';
+import { LandingenComponent } from './landing.component';
 
 describe('LandingenComponent', () => {
   let component: LandingenComponent;
