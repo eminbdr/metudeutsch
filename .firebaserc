@@ -1,12 +1,5 @@
 {
   "targets": {
-    "mdeutsch-12d32": {
-      "hosting": {
-        "metudeut": [
-          "mdeutsch-12d32"
-        ]
-      }
-    },
     "metudeutsch": {
       "hosting": {
         "metudeut": [

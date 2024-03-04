@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -8,12 +8,13 @@ import { CommonModule } from '@angular/common';
   imports: [RouterLink, CommonModule],
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class FaqenComponent {
   faqs = [
     {
       question: 'What is METU-DEUTSCH?',
-      body: `METU Deutsch is a club that collects all activities and announcements about German on campus under one roof.`,
+      body: `METU Deutsch is a club that gathers all activities and announcements about German on campus under one roof while creating a German speaking environment and fostering German culture.`,
     },
 
     {
@@ -63,7 +64,7 @@ export class FaqenComponent {
       &#8226; Speaking actively around hashtags in groups.
     </p>
     <p>
-      &#8226; Solving quizzes posted everyday that includes listening, reading and vocabulary practices.
+      &#8226; Solving quizzes posted in the group that includes listening, reading and vocabulary practices.
     </p>
     <p>
       &#8226; Attending and being active in our speaking clubs and events.  
@@ -77,18 +78,15 @@ export class FaqenComponent {
 
     {
       question: `Don't forget to explore our hashtags!!!`,
-      body: `<p><span class="hashtags">#wasdenkensie</span>: Falls Sie sich fragen, was andere Leute über das Thema denken.
-    </p>
-    <p><span class="hashtags">#memedestages</span>: Wettbewerb um das beste Meme des Tages, Lacher sind die
-      Gewinner!</p>
-    <p><span class="hashtags">#höregernezu</span>: Wenn 3 Personen dieses Hashtag verwenden, ist es eine Einladung
-      zu einem Sprachchat</p>
-    <p><span class="hashtags">#wortichmag</span>: Teilen Sie das Wort, das interessant klingt!</p>
-    <p><span class="hashtags">#musikfürihr</span>: Wir würden gerne wissen, was Sie hören?</p>
-    <p><span class="hashtags">#deutschetimologie</span>: Weil Etymologie faszinierend sein kann.</p>
-    <p><span class="hashtags">#fürmetudeutsch</span>: Eine Idee, die Sie für METU Deutsch gut finden (wir möchten
-      unterstützen)</p>
-    <p class="end">Es wäre cool, wenn Sie Hashtags in den Sätzen verwenden :&#41;</p>`,
+      body: `<p><span class="hashtags">#wasdenkensie</span>: if you are wondering what other people think about the topic.</p>
+      <p><span class="hashtags">#memedestages</span>: Competition for the best meme of the day, laugher is the winner!</p>
+      <p><span class="hashtags">#höregernezu</span>: If 3 people use this hashtag, it is an invitation to a language chat</p>
+      <p><span class="hashtags">#wortichmag</span>: Share the word that sounds interesting!</p>
+      <p><span class="hashtags">#musikfürihr</span>: We would like to know what you are listening to?</p>
+      <p><span class="hashtags">#musikfürihr</span>: Share the news of the day?</p>
+      <p><span class="hashtags">#deutschetimologie</span>: Because etymology can be fascinating.</p>
+      <p><span class="hashtags">#fürmetudeutsch</span>: An idea that you think is good for METU Deutsch (we want to support)</p>
+      <p>It would be cool if you use hashtags in the sentences:&#41;</p>`,
     },
 
     {
@@ -109,5 +107,15 @@ export class FaqenComponent {
     Let’s learn together!!!
   </p>`,
     },
+
+    {
+      question: 'Can everyone attend speaking clubs?',
+      body: `As METU-Deutsch, since we are a voluntary project, we have limited resources so that means even if we want, we are not able to host all of our members. Also, as a concept, speaking club itself requires active participants. So we are building a fair system that automatically select active members of the week in which the speaking club will be organized. More details about speaking clubs will be shared with you in detail. Don't forget to attend our only German Whatsapp Group`
+    },
+    {
+      question: "What if I couldn't attend speaking clubs?",
+      body: `Speaking is the most essential part of language learning, so people should always be able to improve their speaking abilities. That's why we also built our discord channel so that people can improve their speaking while "chilling" in our discord channels.`
+    },
+
   ];
 }

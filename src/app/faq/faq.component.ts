@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 @Component({
@@ -7,13 +7,14 @@ import { CommonModule } from '@angular/common';
   imports: [RouterLink, CommonModule],
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class FaqComponent {
   faqs = [
     {
       question: 'Was ist METU-DEUTSCH?',
-      body: `<p>METU Deutsch ist ein Verein, der alle Aktivitäten und Ankündigungen
-  über Deutsch auf sammelt Campus unter einem Dach.</p>`,
+      body: `<p>METU-Deutsch ist ein Club, der alle Aktivitäten und Ankündigungen über Deutsch auf dem Campus unter einem Dach vereint 
+      und gleichzeitig ein deutschsprachiges Umfeld schafft und die deutsche Kultur fördert</p>`
     },
 
     {
@@ -36,7 +37,7 @@ export class FaqComponent {
  <p>
    Kontaktieren Sie uns unter <a href="https://www.instagram.com/metu_deutsch/">&#64;metudeutsch</a> auf
    Instagram oder <a href="mailto:metudeutschclub@gmail.com">metudeutschclub&#64;gmail.com</a>
- </p>`,
+ </p>`
     },
     {
       question: 'Was ist unsere Philosophie zum Sprachenlernen?',
@@ -45,7 +46,7 @@ export class FaqComponent {
       In METU-Deutsch wollen wir die Methode fördern, die wir "Eintauchen" nennen, bei der Menschen unabhängig von der CERF-Skalenstufe Vokabeln durch ihr Interessengebiet lernen, indem sie es auf Deutsch verfolgen. Sobald die Menschen einen Wortschatz angesammelt haben, werden sie den Drang verspüren, sich auf Deutsch auszudrücken. Erst an diesem Punkt wird der Bedarf an bestimmten Grammatikkenntnissen entstehen.
 
       Nachdem sie ihr Interessengebiet genossen und sich bequem auf Deutsch ausgedrückt haben, wird sich der aktive Sprachgebrauch später als Kenntnis von Deklarationen und schwierigeren Grammatikkonzepten selbst zurückgeben.
-    </p>`,
+    </p>`
     },
 
     {
@@ -56,7 +57,7 @@ export class FaqComponent {
     Darüber hinaus können Sie sich jederzeit unseren Lernmaterialpool ansehen, um Grammatik anhand der neuesten aktualisierten Inhalte zu lernen.
 
     Wenn Prüfungen für Sie dringende Priorität haben, empfehlen wir Ihnen, im METU-Deutsch aktiv zu sein und gleichzeitig unsere vorgeschlagenen Materialien zu studieren.
-  </p>`,
+  </p>`
     },
 
     {
@@ -69,7 +70,7 @@ export class FaqComponent {
       &#8226; Sprechen aktiv in Gruppen über Hashtags .
     </p>
     <p>
-      &#8226; Lösen Täglich veröffentlichte Quizze, die Hör-, Lese- und Wortschatzübungen beinhalten.
+      &#8226; Lösen veröffentlichte Quizze in unserer Gruppe "Nur Deutsch", die Hör-, Lese- und Wortschatzübungen beinhalten.
     </p>
     <p>
       &#8226; Teilnehmen unsere Vortragsclubs und Aktivitäten
@@ -78,7 +79,7 @@ export class FaqComponent {
       &#8226; Übernehmen eine aktive Rolle in METU-Deutsch, die all dies bieten möchte.
     </p>
     <p class="end" style="font-weight: 600;">
-      Lassen Sie uns gemeinsam die Deutsche Kultur und Sprache fördern!</p>`,
+      Lassen Sie uns gemeinsam die Deutsche Kultur und Sprache fördern!</p>`
     },
 
     {
@@ -91,10 +92,11 @@ export class FaqComponent {
       zu einem Sprachchat</p>
     <p><span class="hashtags">#wortichmag</span>: Teilen Sie das Wort, das interessant klingt!</p>
     <p><span class="hashtags">#musikfürihr</span>: Wir würden gerne wissen, was Sie hören?</p>
+    <p><span class="hashtags">#guckewaslos</span>: Teilen Sie die Neuigkeiten des Tages?</p>
     <p><span class="hashtags">#deutschetimologie</span>: Weil Etymologie faszinierend sein kann.</p>
     <p><span class="hashtags">#fürmetudeutsch</span>: Eine Idee, die Sie für METU Deutsch gut finden (wir möchten
       unterstützen)</p>
-    <p class="end">Es wäre cool, wenn Sie Hashtags in den Sätzen verwenden :&#41;</p>`,
+    <p class="end">Es wäre cool, wenn Sie Hashtags in den Sätzen verwenden :&#41;</p>`
     },
 
     {
@@ -113,7 +115,13 @@ export class FaqComponent {
   </p>
   <p style="font-weight: 600;">
     Lasst uns gemeinsam lernen!!!
-  </p>`,
+  </p>`
     },
+    {question: 'Kann jeder an Sprechclubs teilnehmen?',
+    body: `Als METU-Deutsch haben wir aufgrund unserer freiwilligen Struktur begrenzte Ressourcen. Das bedeutet, dass wir selbst, wenn wir möchten, nicht in der Lage sind, alle unsere Mitglieder zu beherbergen. Da ein Sprechclub selbst aktive Teilnehmer erfordert, entwickeln wir ein faires System, das automatisch aktive Mitglieder der Woche auswählt, in der der Sprechclub organisiert wird. Weitere Details zu Sprechclubs werden Ihnen ausführlich mitgeteilt. Vergessen Sie nicht, an unserer einzigen deutschen Whatsapp-Gruppe teilzunehmen.`
+  },
+  {question: 'Was ist, wenn ich nicht an Sprechclubs teilnehmen kann?',
+  body: `Sprechen ist der wesentlichste Teil des Sprachenlernens, daher sollten Menschen immer in der Lage sein, ihre Sprechfähigkeiten zu verbessern. Deshalb haben wir auch unseren Discord-Kanal eingerichtet, damit die Menschen ihre Sprechfähigkeiten verbessern können, während sie in unseren Discord-Kanälen "chillen".`
+}
   ];
 }

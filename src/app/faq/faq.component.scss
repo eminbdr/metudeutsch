@@ -1,12 +1,3 @@
-:host{
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.75) 16.7%,
-    rgba(255, 0, 0, 0.75) 50%,
-    rgba(255, 204, 0, 0.75) 83.3%
-  );
-}
-
 div.translator-flag-cont {
   margin-top: 20px;
   display: inline-flex;
@@ -37,6 +28,7 @@ div.accordion-body{
       text-wrap:wrap;
       width: inherit;
       margin-bottom:  10px;
+      line-height: 20px;
    
   }
   p.first{
