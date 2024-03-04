@@ -15,8 +15,9 @@ div.translator-flag-cont {
 }
 
 
-a{
+a.accordion-button{
   text-decoration: none;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(163, 202, 246,0.5) 100%);
 }
 .hashtags{
   color: blue;
@@ -48,3 +49,4 @@ div.accordion-body{
 .accordion{
   padding-top: 2%;
 }
+

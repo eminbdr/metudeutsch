@@ -13,17 +13,14 @@ export class FaqComponent {
   faqs = [
     {
       question: 'Was ist METU-DEUTSCH?',
-      body: `<p>METU-Deutsch ist ein Club, der alle Aktivitäten und Ankündigungen über Deutsch auf dem Campus unter einem Dach vereint 
-      und gleichzeitig ein deutschsprachiges Umfeld schafft und die deutsche Kultur fördert</p>`
+      body: `<p>METU-Deutsch ist ein Studentenclub, der alle Aktivitäten und Ankündigungen über Deutsch auf dem Campus unter einem Dach vereinen, ein deutschsprachiges Umfeld schaffen und die deutsche Kultur fördern will. 
+      </p>`
     },
 
     {
       question: 'Wie funktiert "Lass Uns Aufzubauen Zusammen"?',
       body: `<p class="first"> des Volkes, durch das Volk, für das Volk!</p>
- <p>Als METU-Deutsch, bauen wir diese Studentenclub freiwillig auf. Unser einziges Ziel ist es, durch die
-   Studentenclub zu helfen und zu profitieren. Deshalb sind wir gegen eine Hierarchie. Deshalb haben wir uns
-   entschieden, unsere METU-DEUTSCH TO-DO-Liste zu teilen und Leute als Teammitglieder zu rekrutieren, während
-   sie ihre Arbeiten abschließen und uns berichten.
+ <p>Als METU-Deutsch, bauen wir diese Studentenclub freiwillig auf. Unser einziges Ziel ist es, durch die Studentenclub einander zu helfen und voneinander zu profitieren. Deshalb sind wir gegen eine Hierarchie. Deshalb haben wir uns entschieden, unsere METU-DEUTSCH TO-DO-Liste zu teilen und Leute als Teammitglieder zu rekrutieren, während sie ihre Arbeiten abschließen und uns berichten.
  </p>
  <p>
    <a href="https://docs.google.com/document/d/1srh8Vd9y-IFwLCGLUiOPeJX4jbHL7tNuxbuPlN11jCk/edit?usp=sharing">Klicken
@@ -41,7 +38,7 @@ export class FaqComponent {
     },
     {
       question: 'Was ist unsere Philosophie zum Sprachenlernen?',
-      body: `<p>METU-Deutsch basiert auf einer alternativen Sprachlernphilosophie, die die CERF-Skala (bekannt als A1-C2) ablehnt. Während Grammatik und Deklarationen Teil der Sprachniveaubewertung nach der CERF-Skala sind, glauben wir, dass Grammatik nur ein Werkzeug ist und Deklarationen nur eine Frage der Übung sind.
+      body: `<p>METU-Deutsch basiert auf einer alternativen Sprachlernphilosophie, die die Methode "Eintauchen" fördern. Während Grammatik und Deklarationen Teil der Sprachniveaubewertung, glauben wir, dass Grammatik nur ein Werkzeug ist und Deklarationen nur eine Frage der Übung sind.
       <br><br>
       In METU-Deutsch wollen wir die Methode fördern, die wir "Eintauchen" nennen, bei der Menschen unabhängig von der CERF-Skalenstufe Vokabeln durch ihr Interessengebiet lernen, indem sie es auf Deutsch verfolgen. Sobald die Menschen einen Wortschatz angesammelt haben, werden sie den Drang verspüren, sich auf Deutsch auszudrücken. Erst an diesem Punkt wird der Bedarf an bestimmten Grammatikkenntnissen entstehen.
 
@@ -117,7 +114,7 @@ export class FaqComponent {
     Lasst uns gemeinsam lernen!!!
   </p>`
     },
-    {question: 'Kann jeder an Sprechclubs teilnehmen?',
+    {question: 'Gibt es für den Sprachclub eine Quote?',
     body: `Als METU-Deutsch haben wir aufgrund unserer freiwilligen Struktur begrenzte Ressourcen. Das bedeutet, dass wir selbst, wenn wir möchten, nicht in der Lage sind, alle unsere Mitglieder zu beherbergen. Da ein Sprechclub selbst aktive Teilnehmer erfordert, entwickeln wir ein faires System, das automatisch aktive Mitglieder der Woche auswählt, in der der Sprechclub organisiert wird. Weitere Details zu Sprechclubs werden Ihnen ausführlich mitgeteilt. Vergessen Sie nicht, an unserer einzigen deutschen Whatsapp-Gruppe teilzunehmen.`
   },
   {question: 'Was ist, wenn ich nicht an Sprechclubs teilnehmen kann?',
