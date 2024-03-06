@@ -45,7 +45,13 @@ export class FaqComponent {
       Nachdem sie ihr Interessengebiet genossen und sich bequem auf Deutsch ausgedrückt haben, wird sich der aktive Sprachgebrauch später als Kenntnis von Deklarationen und schwierigeren Grammatikkonzepten selbst zurückgeben.
     </p>`
     },
-
+    {
+      question: "Ich bin ein Anfänger, was soll ich tun?",
+  
+      body: `Als Anfänger bedeutet dies, dass du einen größeren Raum für Verbesserungen hast, und das ist großartig. Denn während Wörterbücher und Übersetzer deine Begleiter sind, sind Fehler auch dein bester Freund. Du kannst jederzeit an Gesprächen in unseren Gruppen teilnehmen, vielleicht mit Hilfe von Übersetzern und anderen Mitgliedern. Mit der Zeit wirst du feststellen, dass du dich mit unglaublicher Geschwindigkeit verbesserst. 
+      
+      Vergiss auch nicht, unseren Lernmaterial-Pool zu überprüfen.`
+    },
     {
       question: 'Was ist, wenn ich Sprachprüfungen bestehen möchte?',
       body: `<p>Ziel von METU-Deutsch ist es nicht, ein Deutschkurs zu sein, sondern eine deutschsprachige Umgebung zu schaffen. Wenn Sie jedoch aktiver in der Gemeinschaft werden und Ihren Beitrag leisten, werden Sie mit vielen Grammatikregeln, Hörübungen, Sprechübungen, Leseübungen und vielem mehr vertraut gemacht ...
@@ -118,7 +124,14 @@ export class FaqComponent {
     body: `Als METU-Deutsch haben wir aufgrund unserer freiwilligen Struktur begrenzte Ressourcen. Das bedeutet, dass wir selbst, wenn wir möchten, nicht in der Lage sind, alle unsere Mitglieder zu beherbergen. Da ein Sprechclub selbst aktive Teilnehmer erfordert, entwickeln wir ein faires System, das automatisch aktive Mitglieder der Woche auswählt, in der der Sprechclub organisiert wird. Weitere Details zu Sprechclubs werden Ihnen ausführlich mitgeteilt. Vergessen Sie nicht, an unserer einzigen deutschen Whatsapp-Gruppe teilzunehmen.`
   },
   {question: 'Was ist, wenn ich nicht an Sprechclubs teilnehmen kann?',
-  body: `Sprechen ist der wesentlichste Teil des Sprachenlernens, daher sollten Menschen immer in der Lage sein, ihre Sprechfähigkeiten zu verbessern. Deshalb haben wir auch unseren Discord-Kanal eingerichtet, damit die Menschen ihre Sprechfähigkeiten verbessern können, während sie in unseren Discord-Kanälen "chillen".`
-}
+  body: `Sprechen ist der wesentlichste Teil des Sprachenlernens, daher sollten Menschen immer in der Lage sein, ihre Sprechfähigkeiten zu verbessern. Deshalb haben wir auch unseren Discord-Kanal eingerichtet, damit die Menschen ihre Sprechfähigkeiten verbessern können, während sie in unseren Discord-Kanälen "chillen".`},
+
+  {
+    question: "Ich bin ein Anfänger, was soll ich tun?",
+
+    body: `Als Anfänger bedeutet dies, dass du einen größeren Raum für Verbesserungen hast, und das ist großartig. Denn während Wörterbücher und Übersetzer deine Begleiter sind, sind Fehler auch dein bester Freund. Du kannst jederzeit an Gesprächen in unseren Gruppen teilnehmen, vielleicht mit Hilfe von Übersetzern und anderen Mitgliedern. Mit der Zeit wirst du feststellen, dass du dich mit unglaublicher Geschwindigkeit verbesserst. 
+    
+    Vergiss auch nicht, unseren Lernmaterial-Pool zu überprüfen.`
+  }
   ];
 }

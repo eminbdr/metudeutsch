@@ -116,6 +116,12 @@ export class FaqenComponent {
       question: "What if I couldn't attend speaking clubs?",
       body: `Speaking is the most essential part of language learning, so people should always be able to improve their speaking abilities. That's why we also built our discord channel so that people can improve their speaking while "chilling" in our discord channels.`
     },
+    {
+      question: "I am a beginner, what should I do?",
+      body: `Being beginner means that you have a bigger room for improvement and that is great. Because while dictionaries and translator are your company, mistakes are also your best friend.
+      You can always participate into conversation in our groups, perhaps with the help of translator and other members. By the time, you will see that you are improving with an incredible pace.
+      Also, don't forget to check out our learning material pool.`
+    }
 
   ];
 }

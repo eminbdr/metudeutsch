@@ -13,7 +13,7 @@ export class LandingComponent {
   static button_names = [
     'Lese Über Metu Deutsch',
     'Folgen Unsere Instagram Seite',
-    '"Nur" Deutsch WP Gruppe (Öffnet sich im März 9)',
+    '"Nur" Deutsch WP Gruppe',
     'Anderer WP Gruppe',
     'Unsere Discord Server',
     'Unsere Youtube Playlist',
@@ -44,7 +44,7 @@ export class LandingComponent {
       status: 'active',
     },
     {
-      value: 'https://discord.gg/3t3z3t3',
+      value: 'https://discord.gg/45Qzy9qduV',
       ico_url:
         'https://upload.wikimedia.org/wikipedia/tr/c/c7/Discord_logo_new.svg',
       status: 'active',
@@ -89,7 +89,7 @@ export class LandingenComponent {
   static button_names = [
     'Read About Metu Deutsch',
     'Follow Our Instagram Page',
-    '"Only" German WP Group (Open in March 9th)',
+    '"Only" German WP Group',
     'Other WP Group',
     'Our Discord Server',
     'Our Youtube Playlist',
