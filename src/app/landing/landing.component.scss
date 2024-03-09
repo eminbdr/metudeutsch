@@ -34,3 +34,19 @@ div.disabled{
 div.hidden{
   display: none;
 }
+
+div#other-platforms{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-items: center;
+  padding-inline: 40%;
+  img{
+    height: 64px;
+    width: 64px;
+    
+  }
+}

@@ -1,6 +1,82 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
+
+var module_imports = 
+
+var button_names_de = [
+  'Lese Über Metu Deutsch',
+  'Folgen Unsere Instagram Seite',
+  'Anderer WP Gruppe',
+  'Unsere Discord Server',
+  'Goethe Sprachcafe Anmeldung',
+];
+
+var button_names_en = [
+  'Read About Metu Deutsch',
+  'Follow Our Instagram Page',
+  'Other WP Group',
+  'Our Discord Server',
+  'Goethe "Sprachcafe" Registration',
+];
+
+var other_platforms = [
+  {
+    id: "yt-music",
+    value:
+      'https://music.youtube.com/playlist?list=PL02TqV5xmkLHpmmHVrtZHPXGQ8Fn5E2Um&si=b7KfAeYGvABvozly',
+    ico_url:
+      'https://img.icons8.com/?size=160&id=v2g5nBwZDzuw&format=png',
+    status: 'active',
+  },
+  {
+    id: "spotify",
+    value:
+      'https://open.spotify.com/playlist/4OOwZqXG8mAMoClVhPZYGo?si=ce12e1fa677c4b97',
+    ico_url:
+      'https://img.icons8.com/?size=160&id=116712&format=png',
+    status: 'active',
+  },
+
+]
+
+var button_values = [
+  {
+    id: "faq",
+    value: '/faq',
+    ico_url: '../assets/Deutsch2.png',
+    style: 'background-color: #f5f5f5; color: black;',
+    status: 'active',
+  },
+  {
+    id: "instagram",
+    value: 'https://www.instagram.com/metu_deutsch/',
+    ico_url: 'https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico',
+    status: 'active',
+  },
+  {
+    id: "other-whatsapp",
+    value: 'https://chat.whatsapp.com/F8i0FhuHVn78cMlwbxNX7L',
+    ico_url: '../assets/wp.svg',
+    status: 'active',
+  },
+  {
+    id: "discord",
+    value: 'https://discord.gg/45Qzy9qduV',
+    ico_url:
+      'https://upload.wikimedia.org/wikipedia/tr/c/c7/Discord_logo_new.svg',
+    status: 'active',
+    style: 'width:32px',
+  },
+
+
+  {
+    id: "goethe",
+    value: 'https://forms.office.com/e/M7G2SA3NF2',
+    ico_url: '../assets/goethe.svg',
+    status: 'active',
+  },
+];
 
 @Component({
   selector: 'app-landing',
@@ -8,73 +84,15 @@ import { RouterLink } from '@angular/router';
   imports: [CommonModule, RouterLink],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
-export class LandingComponent {
-  static button_names = [
-    'Lese Über Metu Deutsch',
-    'Folgen Unsere Instagram Seite',
-    '"Nur" Deutsch WP Gruppe',
-    'Anderer WP Gruppe',
-    'Unsere Discord Server',
-    'Unsere Youtube Playlist',
-    'Unsere Spotify Playlist',
-    'Bist du ein Entwickler?',
-  ];
-  static button_values = [
-    {
-      value: '/faq',
-      ico_url: '../assets/Deutsch2.png',
-      style: 'background-color: #f5f5f5; color: black;',
-      status: 'active',
-    },
-    {
-      value: 'https://www.instagram.com/metu_deutsch/',
-      ico_url: 'https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico',
-      status: 'active',
-    },
-    {
-      value:
-        'https://docs.google.com/forms/d/e/1FAIpQLSdohsi2XKvEB5yFHi4epYBM9FLE68RxM_CV3rC_etro8SWADw/viewform?usp=sf_link',
-      ico_url: '../assets/wp.svg',
-      status: 'active',
-    },
-    {
-      value: 'https://chat.whatsapp.com/F8i0FhuHVn78cMlwbxNX7L',
-      ico_url: '../assets/wp.svg',
-      status: 'active',
-    },
-    {
-      value: 'https://discord.gg/45Qzy9qduV',
-      ico_url:
-        'https://upload.wikimedia.org/wikipedia/tr/c/c7/Discord_logo_new.svg',
-      status: 'active',
-      style: 'width:32px',
-    },
-    {
-      value:
-        'https://music.youtube.com/playlist?list=PL02TqV5xmkLHpmmHVrtZHPXGQ8Fn5E2Um&si=b7KfAeYGvABvozly',
-      ico_url:
-        'https://upload.wikimedia.org/wikipedia/commons/6/6a/Youtube_Music_icon.svg',
-      status: 'active',
-    },
-    {
-      value:
-        'https://open.spotify.com/playlist/4OOwZqXG8mAMoClVhPZYGo?si=ce12e1fa677c4b97',
-      ico_url:
-        'https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg',
-      status: 'active',
-    },
-    {
-      value: 'https://github.com/eminbdr/metudeutsch',
-      ico_url: '../assets/github.svg',
-      status: 'hidden',
-    },
-  ];
 
-  buttons = LandingComponent.button_names.map((name, i) => ({
+export class LandingComponent {
+  buttons = button_names_de.map((name, i) => ({
     name,
-    ...LandingComponent.button_values[i],
+    ...button_values[i],
   }));
+  other_platforms = other_platforms;
 }
 
 @Component({
@@ -83,22 +101,13 @@ export class LandingComponent {
   imports: [CommonModule, RouterLink],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class LandingenComponent {
-  static button_values = LandingComponent.button_values; 
-  static button_names = [
-    'Read About Metu Deutsch',
-    'Follow Our Instagram Page',
-    '"Only" German WP Group',
-    'Other WP Group',
-    'Our Discord Server',
-    'Our Youtube Playlist',
-    'Our Spotify Playlist',
-    'Are you a Developer?',
-  ];
-  buttons = LandingenComponent.button_names.map((name, i) => ({
+  buttons = button_names_en.map((name, i) => ({
     name,
-    ...LandingenComponent.button_values[i],
+    ...button_values[i],
   }));
+  other_platforms = other_platforms;
 
 }

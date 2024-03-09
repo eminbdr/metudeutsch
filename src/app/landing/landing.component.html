@@ -77,6 +77,14 @@
           </div>
         </div>
       </div>
+      <div id="other-platforms">
+        <div *ngFor="let platform of other_platforms">
+          <a [href] = "platform.value">
+            <img [src] = "platform.ico_url" class="platform">
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
