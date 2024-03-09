@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-var module_imports = 
 
 var button_names_de = [
   'Lese Über Metu Deutsch',
@@ -74,7 +73,7 @@ var button_values = [
     id: "goethe",
     value: 'https://forms.office.com/e/M7G2SA3NF2',
     ico_url: '../assets/goethe.svg',
-    status: 'active',
+    status: 'hidden',
   },
 ];
 
