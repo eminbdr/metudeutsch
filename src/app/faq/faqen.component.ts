@@ -42,6 +42,12 @@ export class FaqenComponent {
       After enjoying their area of interest and expressing themselves comfortably in German, active use of language will later return themselves as knowledge of declarations and harder grammar concepts.
     </p>`,
     },
+    {
+      question: "I am a beginner, what should I do?",
+      body: `Being beginner means that you have a bigger room for improvement and that is great. Because while dictionaries and translator are your company, mistakes are also your best friend.
+      You can always participate into conversation in our groups, perhaps with the help of translator and other members. By the time, you will see that you are improving with an incredible pace.
+      Also, don't forget to check out our learning material pool.`
+    },
 
     {
       question: 'What if I wish to pass language exams?',
@@ -83,7 +89,7 @@ export class FaqenComponent {
       <p><span class="hashtags">#höregernezu</span>: If 3 people use this hashtag, it is an invitation to a language chat</p>
       <p><span class="hashtags">#wortichmag</span>: Share the word that sounds interesting!</p>
       <p><span class="hashtags">#musikfürihr</span>: We would like to know what you are listening to?</p>
-      <p><span class="hashtags">#musikfürihr</span>: Share the news of the day?</p>
+      <p><span class="hashtags">#guckewaslos</span>: Share the news of the day?</p>
       <p><span class="hashtags">#deutschetimologie</span>: Because etymology can be fascinating.</p>
       <p><span class="hashtags">#fürmetudeutsch</span>: An idea that you think is good for METU Deutsch (we want to support)</p>
       <p>It would be cool if you use hashtags in the sentences:&#41;</p>`,
@@ -116,12 +122,7 @@ export class FaqenComponent {
       question: "What if I couldn't attend speaking clubs?",
       body: `Speaking is the most essential part of language learning, so people should always be able to improve their speaking abilities. That's why we also built our discord channel so that people can improve their speaking while "chilling" in our discord channels.`
     },
-    {
-      question: "I am a beginner, what should I do?",
-      body: `Being beginner means that you have a bigger room for improvement and that is great. Because while dictionaries and translator are your company, mistakes are also your best friend.
-      You can always participate into conversation in our groups, perhaps with the help of translator and other members. By the time, you will see that you are improving with an incredible pace.
-      Also, don't forget to check out our learning material pool.`
-    }
+   
 
   ];
 }
