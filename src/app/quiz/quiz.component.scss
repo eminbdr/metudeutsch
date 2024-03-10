@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+div #level-selection {
+  a {
+    cursor: pointer;
+    margin-inline: 3%;
+    margin-top: 20px;
+    text-decoration: unset;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    aspect-ratio: 4.30;
+    width: 20%
+    ;
+  }
+
+  a:after {
+    background-color: #ddd;
+  }
+  a[routerLink="/quiz-a"]::after{
+    background-color: #00ff10;
+  
+  }
+  a[routerLink="/quiz-b"]::after{
+    background-color:#ffdd10;
+  
+  }
+}
+
+body {
+  background-color: #333;
+}
+.container {
+  background-color: rgb(223 212 212 / 59%);
+  color: rgb(32 30 30 / 85%);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  max-width: 700px;
+}
+
+.container > p {
+  font-size: 32px;
+}
+.question {
+  width: 75%;
+}
+.options {
+  position: relative;
+  padding-left: 40px;
+}
+#options label {
+  display: inline-flex;
+  cursor: pointer;
+}
+.options input {
+  opacity: 0;
+}
+input[type="radio" i] {
+  display: flex;
+  align-self: center;
+  aspect-ratio: 1;
+  height: 25px;
+  background-color: #555;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.options input:checked ~ .checkmark:after {
+  display: block;
+}
+.options .checkmark:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 300ms ease-in-out 0s;
+}
+.options input[type="radio"]:checked ~ .checkmark {
+  background: #21bf73;
+  transition: 300ms ease-in-out 0s;
+}
+.options input[type="radio"]:checked ~ .checkmark:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.btn-primary {
+  background-color: #555;
+  color: #ddd;
+  border: 1px solid #ddd;
+}
+.btn-primary:hover {
+  background-color: #21bf73;
+  border: 1px solid #21bf73;
+}
+.btn-success {
+  padding: 5px 25px;
+  background-color: #21bf73;
+}
+@media (max-width: 576px) {
+  .question {
+    width: 100%;
+    word-spacing: 2px;
+  }
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}

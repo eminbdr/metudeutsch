@@ -1,0 +1,80 @@
+<div
+  style="width: 85%; display: block; justify-content: center"
+  class="website-container"
+>
+  <div
+    style="
+      margin-top: 20px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    "
+  >
+    <p style="font-weight: 600">Bitte wählen Sie das Niveau aus:
+    </p>
+    <div id="level-selection">
+      <a routerLink="/quiz-a" class = "button-52">Einfaches Niveau </a>
+      <a routerLink="/quiz-b" class = "button-52">Mittleres Niveau</a>
+    </div>
+  </div>
+  <div class="container mt-sm-5 my-1">
+    <form action="" method="get" class="form-example">
+      <div
+        *ngFor="let question_index of generator(questions.length)"
+        class="ml-sm-5 pl-sm-5 pt-2"
+      >
+        <div class="py-2 h5">
+          <b>{{ questions[question_index].question }}</b>
+        </div>
+        <div
+          *ngFor="
+            let choice_index of generator(
+              questions[question_index].choices.length
+            )
+          "
+          class="option"
+          style="
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: inline-flex;
+            width: 100%;
+          "
+        >
+          <label
+            [for]="'q-' + question_index + '-' + choice_index"
+            style="display: inline-flex; width: 100%; cursor: pointer"
+          >
+            <input
+              type="radio"
+              [name]="'q' + question_index"
+              [id]="'q-' + question_index + '-' + choice_index"
+              required="true"
+            />
+            <p
+              style="
+                padding-inline: 15px;
+                overflow-wrap: anywhere;
+                align-self: center;
+                width: 100%;
+                display: inline-flex;
+              "
+            >
+              {{ questions[question_index].choices[choice_index] }}
+            </p>
+          </label>
+        </div>
+      </div>
+      <div
+        style="
+          justify-content: end;
+          width: 100%;
+          display: inline-flex;
+          margin-top: 20px;
+          padding-inline: 30px;
+        "
+      >
+        <button class="button-52" role="button">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
