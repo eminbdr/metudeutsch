@@ -27,12 +27,20 @@ div.translator-flag-cont {
 
   }
 }
-
-div.disabled{
+button.group{
+  background-color: #fff;
+}
+button.disabled{
   background-color: gray;
 }
 div.hidden{
   display: none;
+}
+
+p.sc-hKgILt{
+  p{
+    font-weight: 300;
+  }
 }
 
 div#other-platforms{

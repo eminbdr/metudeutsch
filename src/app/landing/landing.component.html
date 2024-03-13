@@ -15,56 +15,94 @@
     </style>
     <div class="sc-bdfBwQ sc-gsTCUz ewSEqQ bhdLno">
       <div class="sc-bdfBwQ dLqIok">
-
         <div class="translator-flag-cont">
-          <a routerLink="/"><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"
-              alt="" /></a>
+          <a routerLink="/"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"
+              alt=""
+          /></a>
           <div style="width: 10px"></div>
-          <a routerLink="/main-en"><img
-              src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="" /></a>
+          <a routerLink="/main-en"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+              alt=""
+          /></a>
         </div>
         <div class="sc-bdfBwQ jrDHLp">
           <div class="sc-bdfBwQ pkAuV">
             <div class="sc-bdfBwQ sc-kIeTtH jAmcnV cnxSGb"></div>
-            <div *ngFor="let button of buttons" [attr.class]="button.status + ' sc-bdfBwQ sc-kfzAmx yGulR'">
-              <div class="sc-bdfBwQ MUXSj">
-                <div class="sc-bdfBwQ hJerva">
-                  <div class="sc-bdfBwQ TOBck"></div>
-                </div>
-                <div class="sc-bdfBwQ gWDeZD">
-                  <div class="sc-bdfBwQ jAmcnV">
-                    <button class="sc-pFZIQ sc-dmlrTW hprkOx fbYVgq group" [disabled]='button.status == "disabled" ? "true" : null'
-                     height="auto"
+            <div *ngFor="let button of buttons" >
+              <div class="button-complete" style="display: inline-flex; width: 100%;">
+                <button
+                  [attr.class]="button.status+' sc-pFZIQ sc-dmlrTW hprkOx fbYVgq group'"
+                  [disabled]="button.status == 'disabled' ? 'true' : null"
+                  height="auto"
+                  style="
+                    display: inline-flex;
+                    padding-bottom: 0px;
+                    padding-top: 0px;
+                    border: 2px solid;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    border-color: #fff;
+                    color: #000;
+                    border-radius: 30px;
+                    margin-right: 10px;
+                  "
+                >
+                  <a
+                    href="{{ button.value }}"
+                    (click)="clickCounter(button.name)"
+                    target="_blank"
+                    rel="noopener"
+                    data-testid="LinkButton"
+                    class="sc-pFZIQ sc-dmlrTW ldGKnQ fbYVgq group"
+                    aria-describedby="profile-tatiana-reine "
+                    height="auto"
+                    style="padding-inline: unset; margin-inline: 0px"
+                  >
+                    <div
+                      class="w-full h-full"
                       style="
                         display: inline-flex;
-                        padding-bottom: 0px;
-                        padding-top: 0px;
-                      ">
-                      <a href="{{ button.value }}" (click)="clickCounter(button.name)" target="_blank" rel="noopener" data-testid="LinkButton"
-                        class="sc-pFZIQ sc-dmlrTW ldGKnQ fbYVgq group" aria-describedby="profile-tatiana-reine "
-                        height="auto" style="padding-inline: unset; margin-inline: 0px">
-                        <div class="w-full h-full" style="
-                            display: inline-flex;
-                            flex-flow: nowrap;
-                            width: 100%;
-                          ">
-                          <img class="preview-icon" src="{{ button.ico_url }}" />
+                        flex-flow: nowrap;
+                        width: 100%;
+                      "
+                    >
+                      <img class="preview-icon" src="{{ button.ico_url }}" />
 
-                          <p class="sc-hKgILt sc-jUEnpm gXKGT fmxDzY" style="
-                              font-weight: 600;
-                              align-self: center;
-                              padding-left: 10px;
-                            ">
-                            {{ button.name }}
-                          </p>
-                          <svg style="align-self:center" *ngIf="button.status == 'disabled'" xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-lock" viewBox="0 0 16 16">
-                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
-                          </svg>
-                        </div>
-                      </a>
-                    </button>
-                  </div>
-                </div>
+                      <p [innerHTML]="button.name"
+                        class="sc-hKgILt sc-jUEnpm gXKGT fmxDzY"
+                        style="
+                          font-weight: 600;
+                          align-self: center;
+                          padding-left: 10px;
+                        "
+                      >
+                        
+                      </p>
+                      <svg
+                        style="align-self: center"
+                        *ngIf="button.status == 'disabled'"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        class="bi bi-lock"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </button>
+                <a *ngIf="button.calendar != ''" target="_blank" [href]="button.calendar" style="align-self: center;"
+                  ><img
+                  width="32px" height="32px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"
+                />
+              </a>
               </div>
             </div>
           </div>
@@ -72,12 +110,11 @@
       </div>
       <div id="other-platforms">
         <div *ngFor="let platform of other_platforms">
-          <a [href] = "platform.value">
-            <img [src] = "platform.ico_url" class="platform">
+          <a [href]="platform.value">
+            <img [src]="platform.ico_url" class="platform" />
           </a>
         </div>
       </div>
-
     </div>
   </div>
 </div>
