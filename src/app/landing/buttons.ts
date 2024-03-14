@@ -40,7 +40,7 @@ export class LandingValues{
     ico_url: '../assets/Deutsch2.png',
     style: 'background-color: #f5f5f5; color: black;',
     status: 'active',
-    calendar: ''
+    calendar : ''
 
   },
   { name:"",
@@ -50,6 +50,7 @@ export class LandingValues{
     value: 'https://www.instagram.com/metu_deutsch/',
     ico_url: 'https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico',
     status: 'active',
+    calendar: ''
   },
   { name:"",
     name_de: 'MD-Hauptbahnof (Hauptgruppe)  <p>(Kontaktieren uns zu beitreten)</p>',
@@ -57,9 +58,10 @@ export class LandingValues{
     id: "whatsapp",
     value: 'https://docs.google.com/forms/d/1fM6wWItV7nsStW3H552mOBmXE9uNh_JoIHfW_kxvXjE/edit#responses',
     ico_url: '../assets/wp.svg',
-    status: 'disable',
+    status: 'disabled',
     description: "Bitte kontaktieren uns für die WhatsApp-Gruppe.",
-    addfunc: "console.log('Hello')"
+    addfunc: "console.log('Hello')",
+    calendar: ''
   },
   { name:"",
     name_de: 'Anderer WP Gruppe',
@@ -68,6 +70,7 @@ export class LandingValues{
     value: 'https://chat.whatsapp.com/F8i0FhuHVn78cMlwbxNX7L',
     ico_url: '../assets/wp.svg',
     status: 'active',
+    calendar: ''
   },
   { name:"",
     name_de: "Unsere Discord Server",
@@ -78,6 +81,7 @@ export class LandingValues{
       'https://upload.wikimedia.org/wikipedia/tr/c/c7/Discord_logo_new.svg',
     status: 'active',
     style: 'width:32px',
+    calendar:''
   },
 
 ];}

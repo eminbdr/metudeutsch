@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 import {LandingValues} from './buttons'
 import {linkClickCounter} from '../firebase.config'
 import { HttpClientModule,HttpClient } from '@angular/common/http';
-import { OnInit } from '@angular/core';
 
 var commonimports  = [CommonModule, RouterLink,HttpClientModule]
 var button_values = LandingValues.button_values;
@@ -12,7 +11,7 @@ var other_platforms = LandingValues.other_platforms;
 
 
 
-function fetcher(){
+/*function fetcher(){
   const https = require('https');
 
   const req = https.request({
@@ -40,7 +39,7 @@ function fetcher(){
   });
   
   req.end();
-}
+}*/
 
 
 @Component({
@@ -57,7 +56,7 @@ export class LandingComponent {
   buttons:any;
 
   other_platforms = other_platforms;
-  constructor() { fetcher();
+  constructor() { 
     this.buttons = button_values
     ;this.buttons.forEach((item: any ) => {
     // Assign the value of name_en to name
