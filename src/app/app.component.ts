@@ -7,7 +7,7 @@ import { FaqComponent } from './faq/faq.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive,LandingComponent,FaqComponent],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive,FaqComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

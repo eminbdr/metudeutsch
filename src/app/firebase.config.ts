@@ -2,6 +2,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
+import { getStorage,ref as storeref,getDownloadURL, listAll,connectStorageEmulator,getBytes
+} from "firebase/storage";
 import {getDatabase,set, ref as dbref,connectDatabaseEmulator,get} from "firebase/database";
 
 
@@ -10,6 +12,7 @@ const firebaseConfig = {
   authDomain: "metudeutsch.firebaseapp.com",
   databaseURL: "https://metudeutsch-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "metudeutsch",
+  storageBucket: "metudeutsch.appspot.com",
   messagingSenderId: "812486750712",
   appId: "1:812486750712:web:3535fc315443f18caea60d",
   measurementId: "G-0XZVLBDTSZ"
@@ -21,6 +24,13 @@ const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 
 export const database = getDatabase(app);
+const storage = getStorage(app);
+export const reference = storeref(storage, 'constants.json');
+
+if (location.hostname === "localhost") {
+connectStorageEmulator(storage, "localhost", 9199);
+
+};
 
 
 if (location.hostname === "localhost") {

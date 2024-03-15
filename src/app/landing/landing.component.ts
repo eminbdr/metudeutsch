@@ -1,87 +1,86 @@
 import { CommonModule } from '@angular/common';
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation,Injectable } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import {LandingValues} from './buttons'
-import {linkClickCounter} from '../firebase.config'
+import { linkClickCounter } from '../firebase.config';
+import { LandingValues } from './buttons';
 import { HttpClientModule,HttpClient } from '@angular/common/http';
-
-var commonimports  = [CommonModule, RouterLink,HttpClientModule]
-var button_values = LandingValues.button_values;
-var other_platforms = LandingValues.other_platforms;
-
+import { Observable, of } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
+import { DatashareService } from '../data-share.service';
 
 
-/*function fetcher(){
-  const https = require('https');
+var commonimports  = [CommonModule, RouterLink]
 
-  const req = https.request({
-      hostname: 'raw.githubusercontent.com',
-      port: 443,
-      path: '/eminbdr/datasets_from_books/main/constants.json',
-      method: 'GET',
-    }, (res:any) => {
-    let data = '';
+@Component({template: ''})
+export class BaseLandingComponent {
+  clickCounter = linkClickCounter;
+  buttons: any;
+  other_platforms = LandingValues.other_platforms;
+  overall: any;
+
+  constructor(protected dataService: DatashareService) {}
+  ngOnInit() {
+    this.processData();
+  }
+
   
-    res.on('data', (chunk:any) => {
-      data += chunk;
-    });
-  
-    res.on('end', () => {
-  
-        button_values = JSON.parse(data);
-          console.log(button_values)
-      
-    });
-  });
-  
-  req.on('error', (error:any) => {
-    console.error('Error fetching data:', error);
-  });
-  
-  req.end();
-}*/
 
+
+  async processData() {
+    {
+    (await this.dataService.fetchData()).subscribe(
+      (data:any) => {
+        this.overall = data; // Store the fetched data
+        this.buttons = this.overall.buttons;
+        this.processButtons(this.buttons);
+      },
+      (error:any) => {
+        console.error('Error fetching data:', error);
+      }
+    );
+    }
+  }
+
+  protected processButtons(buttons: any[]) {
+    // Implement in child components
+  }
+}
 
 @Component({
   selector: 'app-landing',
-  standalone: true,
-  imports: commonimports,
   templateUrl: './landing.component.html',
-  styleUrl: './landing.component.scss',
+  styleUrls: ['./landing.component.scss'],
   encapsulation: ViewEncapsulation.None,
+  imports : commonimports,
+  standalone: true
 })
+export class LandingComponent extends BaseLandingComponent {
+  constructor(dataService: DatashareService) {
+    super(dataService);
+  }
 
-export class LandingComponent {
-  clickCounter = linkClickCounter
-  buttons:any;
-
-  other_platforms = other_platforms;
-  constructor() { 
-    this.buttons = button_values
-    ;this.buttons.forEach((item: any ) => {
-    // Assign the value of name_en to name
-    item.name = item.name_de;
-  });}
+  protected override processButtons(buttons: any[]) {
+    buttons.forEach((item: any) => {
+      item.name = item.name_de;
+    });
+  }
 }
 
 @Component({
   selector: 'app-landingen',
-  standalone: true,
-  imports: commonimports,
   templateUrl: './landing.component.html',
-  styleUrl: './landing.component.scss',
-  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./landing.component.scss'],
+  imports : commonimports,
+  standalone: true
 })
-export class LandingenComponent {
-  buttons = button_values;
-  other_platforms = other_platforms;
-  clickCounter = linkClickCounter
+export class LandingenComponent extends BaseLandingComponent {
+  constructor(dataService: DatashareService) {
+    super(dataService);
+  }
 
-  constructor() { this.buttons.forEach((item: any ) => {
-    // Assign the value of name_en to name
-    item.name = item.name_en;
-  });
-
-  
+  protected override processButtons(buttons: any[]) {
+    buttons.forEach((item: any) => {
+      item.name = item.name_en;
+    });
   }
 }
