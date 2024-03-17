@@ -13,6 +13,9 @@ standalone: true,
 })
 export class BaseFaqComponent {
 
+  constructor(){
+    this.processFaqs();
+  }
   protected processFaqs(){
 
   }
@@ -21,7 +24,8 @@ export class BaseFaqComponent {
     { question:'',
       question_de: 'Was ist METU-DEUTSCH?',
       question_en: 'What is METU-DEUTSCH?',
-      body: `<p>METU-Deutsch ist ein Studentenclub, der alle Aktivitäten und Ankündigungen über Deutsch auf dem Campus unter einem Dach vereinen, ein deutschsprachiges Umfeld schaffen und die deutsche Kultur fördern will. 
+      body:``,
+      body_de: `<p>METU-Deutsch ist ein Studentenclub, der alle Aktivitäten und Ankündigungen über Deutsch auf dem Campus unter einem Dach vereinen, ein deutschsprachiges Umfeld schaffen und die deutsche Kultur fördern will. 
       </p>`,
       body_en: `<p>METU Deutsch is a club that aims to gather all activities and announcements about German on campus under one roof while creating a German speaking environment and fostering German culture.</p>`,
     },
@@ -29,6 +33,7 @@ export class BaseFaqComponent {
     { question:'',
       question_de: 'Wie funktiert "Lass Uns Aufzubauen Zusammen"?',
       question_en: `How does "Let's Build Together" work?"`,
+      body:``,
       body_de: `<p class="first"> des Volkes, durch das Volk, für das Volk!</p>
  <p>Als METU-Deutsch, bauen wir diese Studentenclub freiwillig auf. Unser einziges Ziel ist es, durch die Studentenclub einander zu helfen und voneinander zu profitieren. Deshalb sind wir gegen eine Hierarchie. Deshalb haben wir uns entschieden, unsere METU-DEUTSCH TO-DO-Liste zu teilen und Leute als Teammitglieder zu rekrutieren, während sie ihre Arbeiten abschließen und uns berichten.
  </p>
@@ -63,6 +68,7 @@ export class BaseFaqComponent {
     { question:'',
       question_de: 'Was ist unsere Philosophie zum Sprachenlernen?',
       question_en: 'What is our language learning philosophy?',
+      body:``,
       body_de: `<p>METU-Deutsch basiert auf einer alternativen Sprachlernphilosophie, die die Methode "Eintauchen" fördern. Während Grammatik und Deklarationen Teil der Sprachniveaubewertung, glauben wir, dass Grammatik nur ein Werkzeug ist und Deklarationen nur eine Frage der Übung sind.
       <br><br>
       In METU-Deutsch wollen wir die Methode fördern, die wir "Eintauchen" nennen, bei der Menschen unabhängig von der CERF-Skalenstufe Vokabeln durch ihr Interessengebiet lernen, indem sie es auf Deutsch verfolgen. Sobald die Menschen einen Wortschatz angesammelt haben, werden sie den Drang verspüren, sich auf Deutsch auszudrücken. Erst an diesem Punkt wird der Bedarf an bestimmten Grammatikkenntnissen entstehen.
@@ -79,7 +85,8 @@ export class BaseFaqComponent {
     { question:'',
       question_de: 'Ich bin ein Anfänger, was soll ich tun?',
       question_en: "I am a beginner, what should I do?",
-      body: `Als Anfänger bedeutet dies, dass du einen größeren Raum für Verbesserungen hast, und das ist großartig. Denn während Wörterbücher und Übersetzer deine Begleiter sind, sind Fehler auch dein bester Freund. Du kannst jederzeit an Gesprächen in unseren Gruppen teilnehmen, vielleicht mit Hilfe von Übersetzern und anderen Mitgliedern. Mit der Zeit wirst du feststellen, dass du dich mit unglaublicher Geschwindigkeit verbesserst. 
+      body:``,
+      body_de: `Als Anfänger bedeutet dies, dass du einen größeren Raum für Verbesserungen hast, und das ist großartig. Denn während Wörterbücher und Übersetzer deine Begleiter sind, sind Fehler auch dein bester Freund. Du kannst jederzeit an Gesprächen in unseren Gruppen teilnehmen, vielleicht mit Hilfe von Übersetzern und anderen Mitgliedern. Mit der Zeit wirst du feststellen, dass du dich mit unglaublicher Geschwindigkeit verbesserst. 
       
       Vergiss auch nicht, unseren Lernmaterial-Pool zu überprüfen.`,
       body_en: `Being beginner means that you have a bigger room for improvement and that is great. Because while dictionaries and translator are your company, mistakes are also your best friend.
@@ -89,6 +96,8 @@ export class BaseFaqComponent {
     { question:'',
       question_de: 'Was ist, wenn ich Sprachprüfungen bestehen möchte?',
       question_en: 'What if I wish to pass language exams?',
+
+      body:``,
       body_de: `<p>Ziel von METU-Deutsch ist es nicht, ein Deutschkurs zu sein, sondern eine deutschsprachige Umgebung zu schaffen. Wenn Sie jedoch aktiver in der Gemeinschaft werden und Ihren Beitrag leisten, werden Sie mit vielen Grammatikregeln, Hörübungen, Sprechübungen, Leseübungen und vielem mehr vertraut gemacht ...
 
     Wenn Sie also einen alternativen Weg einschlagen, beherrschen Sie zunächst das Sprechen und später die Grammatik.
@@ -108,6 +117,7 @@ export class BaseFaqComponent {
     { question:'',
       question_de: 'Wie kann ich die Methode des „Eintauchens“ anwenden?',
       question_en: 'How can I apply "Diving Into" method?',
+      body:``,
       body_de: `<p>METU-Deutsch ist genau für diese Frage da. Sie können Ihre Deutschkenntnisse ganz einfach verbessern, indem Sie;
     <p>
       &#8226; Verfolgen Ihr Interessengebiet durch unsere vorgeschlagenen Inhalte und die Inhalte, die Sie der METU-Deutsch vorschlagen.
@@ -149,6 +159,7 @@ export class BaseFaqComponent {
     { question:'',
       question_de: 'Vergessen Sie nicht, unsere Hashtags zu erkunden!!!',
       question_en: `Don't forget to explore our hashtags!!!`,
+      body:``,
       body_de: `<p><span class="hashtags">#wasdenkensie</span>: Falls Sie sich fragen, was andere Leute über das Thema denken.
     </p>
     <p><span class="hashtags">#memedestages</span>: Wettbewerb um das beste Meme des Tages, Lacher sind die
@@ -183,6 +194,7 @@ export class BaseFaqComponent {
     { question:'',
       question_de: 'Ich interessiere mich auch für Design/Entwicklung/Lehre…',
       question_en: 'I am also interested in Design/Developing/Teaching…',
+      body:``,
       body_de: `<p>
     <span style="font-weight: 600;">Das ist großartig!</span> Denn während wir als METU-Deutsch versuchen, eine deutschsprachige Umgebung zu fördern, versuchen wir im organisatorischen Bereich auch, eine projektbasierte, kollaborative Lernumgebung zu schaffen.
   </p>
@@ -222,6 +234,7 @@ export class BaseFaqComponent {
       question_de: 'Gibt es für den Sprachclub eine Quote?',
       question_en: 'Is there a quota for the speaking club?',
 
+      body:``,
       body_de: `Als METU-Deutsch haben wir aufgrund unserer freiwilligen Struktur begrenzte Ressourcen. Das bedeutet, dass wir selbst, wenn wir möchten, nicht in der Lage sind, alle unsere Mitglieder zu beherbergen. Da ein Sprechclub selbst aktive Teilnehmer erfordert, entwickeln wir ein faires System, das automatisch aktive Mitglieder der Woche auswählt, in der der Sprechclub organisiert wird. Weitere Details zu Sprechclubs werden Ihnen ausführlich mitgeteilt. Vergessen Sie nicht, an unserer einzigen deutschen Whatsapp-Gruppe teilzunehmen.`,
 
       body_en: `As METU-Deutsch, due to our voluntary structure, we have limited resources. This means that we are not able to accommodate all of our members even if we want to. Since a speaking club requires active participants itself, we are developing a fair system that automatically selects active members of the week in which the speaking club is organized. Further details about speaking clubs will be informed to you in detail. Don't forget to participate in our only German Whatsapp group.`,
@@ -231,6 +244,7 @@ export class BaseFaqComponent {
       question_de: 'Was ist, wenn ich nicht an Sprechclubs teilnehmen kann?',
       question_en: "What if I couldn't attend speaking clubs?",
 
+      body:``,
       body_de: `Sprechen ist der wesentlichste Teil des Sprachenlernens, daher sollten Menschen immer in der Lage sein, ihre Sprechfähigkeiten zu verbessern. Deshalb haben wir auch unseren Discord-Kanal eingerichtet, damit die Menschen ihre Sprechfähigkeiten verbessern können, während sie in unseren Discord-Kanälen "chillen".`,
       body_en: `Speaking is the most essential part of language learning, so people should always be able to improve their speaking abilities. That's why we also built our discord channel so that people can improve their speaking while "chilling" in our discord channels.`,
     },
