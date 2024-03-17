@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
-import { FaqComponent } from './faq/faq.component';
+import { FaqComponent } from './faq/faq_base.component';
+
 
 @Component({
   selector: 'app-root',

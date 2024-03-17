@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div id="__next" data-reactroot="">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
@@ -31,7 +32,7 @@
         <div class="sc-bdfBwQ jrDHLp">
           <div class="sc-bdfBwQ pkAuV">
             <div class="sc-bdfBwQ sc-kIeTtH jAmcnV cnxSGb"></div>
-            <div *ngFor="let button of buttons" >
+            <div *ngFor="let button of buttons" class="animate__animated animate__fadeInUp" >
               <div class="button-complete" style="display: inline-flex; width: 100%;">
                 <button
                   [attr.class]="button.status+' sc-pFZIQ sc-dmlrTW hprkOx fbYVgq group'"
@@ -50,11 +51,9 @@
                     margin-right: 10px;
                   "
                 >
-                  <a
-                    href="{{ button.value }}"
+                  <a href="{{button.value}}" 
                     (click)="clickCounter(button.name)"
                     target="_blank"
-                    rel="noopener"
                     data-testid="LinkButton"
                     class="sc-pFZIQ sc-dmlrTW ldGKnQ fbYVgq group"
                     aria-describedby="profile-tatiana-reine "
@@ -63,11 +62,6 @@
                   >
                     <div
                       class="w-full h-full"
-                      style="
-                        display: inline-flex;
-                        flex-flow: nowrap;
-                        width: 100%;
-                      "
                     >
                       <img class="preview-icon" src="{{ button.ico_url }}" />
 
@@ -109,7 +103,7 @@
         </div>
       </div>
       <div id="other-platforms">
-        <div *ngFor="let platform of other_platforms">
+        <div *ngFor="let platform of other_platforms" class="animate__animated animate__pulse">
           <a [href]="platform.value">
             <img [src]="platform.ico_url" class="platform" />
           </a>

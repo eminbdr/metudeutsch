@@ -58,3 +58,18 @@ div#other-platforms{
     
   }
 }
+
+div.w-full.h-full{
+  display: inline-flex;
+  flex-flow: nowrap;
+  width: 100%;
+}
+
+div.animate__animated.animate__fadeInUp{
+  animation-duration: 2s;
+}
+
+div.animate__animated.animate__pulse{
+  animation-duration: 2s;
+  
+}
