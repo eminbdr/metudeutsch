@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { FaqComponent } from './faq/faq_base.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive,FaqComponent],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive,FaqComponent,FooterComponent,HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -2,8 +2,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
-import { getStorage,ref as storeref,getDownloadURL, listAll,connectStorageEmulator,getBytes
-} from "firebase/storage";
 import {getDatabase,set, ref as dbref,connectDatabaseEmulator,get} from "firebase/database";
 
 
@@ -24,13 +22,7 @@ const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 
 export const database = getDatabase(app);
-const storage = getStorage(app);
-export const reference = storeref(storage, 'constants.json');
 
-if (location.hostname === "localhost") {
-connectStorageEmulator(storage, "localhost", 9199);
-
-};
 
 
 if (location.hostname === "localhost") {

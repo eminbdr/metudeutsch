@@ -3,17 +3,15 @@ import { Component, ViewEncapsulation,Injectable } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { linkClickCounter } from '../firebase.config';
 import { LandingValues } from './buttons';
-import { HttpClientModule,HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
 import { DatashareService } from '../data-share.service';
-import {} from './constants.json' 
+import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
 
 /*Import Json*/
 import * as data from './constants.json';
-import { HeaderComponent } from '../header/header.component';
 
-var commonimports  = [CommonModule, RouterLink,HeaderComponent]
+
+var commonimports  = [CommonModule, RouterLink,HeaderComponent,FooterComponent]
 
 @Component({template: ''})
 export class BaseLandingComponent {

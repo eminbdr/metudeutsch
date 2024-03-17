@@ -1,0 +1,12 @@
+div.footer-container{
+    display: inline-flex; width: 100%;justify-content: end; padding-inline: 20px;
+}
+
+a#mail{
+    
+    display: inline-flex;
+    flex-flow: nowrap;
+    p{
+        padding-left: 3px;padding-bottom: 2px;align-self: end;color: cornflowerblue;
+    }
+}

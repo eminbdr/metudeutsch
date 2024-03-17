@@ -2,13 +2,14 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
+
+var common_imports = [RouterLink, CommonModule, HeaderComponent,FooterComponent];
+
 @Component({
-  selector: 'app-faq',
-  standalone: true,
-  imports: [RouterLink, CommonModule, HeaderComponent],
-  templateUrl: './faq.component.html',
-  styleUrl: './faq.component.scss',
-  encapsulation: ViewEncapsulation.None,
+template: '',
+imports: common_imports,
+standalone: true,
 })
 export class BaseFaqComponent {
 
@@ -240,7 +241,7 @@ export class BaseFaqComponent {
 @Component({
   selector: 'app-faq',
   standalone: true,
-  imports: [RouterLink, CommonModule,HeaderComponent],
+  imports: common_imports,
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss',
   encapsulation: ViewEncapsulation.None,
@@ -264,7 +265,7 @@ export class FaqComponent extends BaseFaqComponent{
 @Component({
   selector: 'app-faqen',
   standalone: true,
-  imports: [RouterLink, CommonModule,HeaderComponent],
+  imports: common_imports,
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss',
   encapsulation: ViewEncapsulation.None,

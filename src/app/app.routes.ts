@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
-import { FaqComponent } from './faq/faq.component';
-import { FaqenComponent } from './faq/faqen.component';
+import { FaqComponent,FaqenComponent } from './faq/faq_base.component';
 import { LandingenComponent } from './landing/landing.component';
 import { QuizAComponent, QuizBComponent } from './quiz/quiz.component';
 
