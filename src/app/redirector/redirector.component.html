@@ -1,0 +1,20 @@
+<div class="redirector" style="
+text-align: center;
+font-weight: 600;
+font-size: 30px;
+margin: 50px;
+color: white;
+">
+    <p *ngIf="!active">
+        Our crash course will be available at 15:00 on 11 April. The link will be available here.
+    </p>
+    <div *ngIf="active" >
+        <p>
+            You are being redirected to <a href="{{url}}">Crash Course</a>
+        </p>
+        <p>
+            If you are not redirected automatically, follow the <a href="{{url}}">link</a>
+        </p>
+    </div>
+    
+</div>

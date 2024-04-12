@@ -11,8 +11,31 @@
     "calendar" : ""
   },
   { "name":"",
-    "name_de": "Folge unserer Instagram-Seite",
-    "name_en": "Follow Our Instagram Page",
+  "name_de": "MD Starterkit",
+  "name_en": "MD Starter Kit",
+  "id": "starterkit",
+  "value": "/starter-kit",
+  "routerLink": "/starter-kit",
+  "ico_url": "../assets/Deutsch2.png",
+  "style": "background-color: #f5f5f5; color: black;",
+  "status": "active",
+  "calendar" : ""
+},
+{ "name":"",
+"name_de": "MD-AKT German Crash Course",
+"name_en": "MD-AKT German Crash Course",
+"id": "crashcourse",
+"value": "/crash-course",
+"routerLink": "/crash-course",
+"ico_url": "../assets/Deutsch2.png",
+"style": "background-color: #f5f5f5; color: black;",
+"status": "active",
+"calendar" : ""
+},
+  
+  { "name":"",
+    "name_de": "Folge unserer Instagram",
+    "name_en": "Follow Our Instagram",
     "id": "instagram",
     "value": "https://www.instagram.com/metu_deutsch/",
     "ico_url": "https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico",
@@ -20,12 +43,12 @@
     "calendar": ""
   },
   { "name":"",
-    "name_de": "MD-HauptbahnHof (Hauptgruppe)  <p>(Kontaktieren uns um zu beitreten)</p>",
-    "name_en": "MD-HauptbahnHof (Main Group) <p>(Contact us to join)</p>",
+    "name_de": "Hauptgruppe  <p>(Fülle das Formular aus, um teilzunehmen)</p>",
+    "name_en": "Main Group <p>(Fill the Form to Participate)</p>",
     "id": "whatsapp",
     "value": "https://docs.google.com/forms/d/1fM6wWItV7nsStW3H552mOBmXE9uNh_JoIHfW_kxvXjE/edit#responses",
     "ico_url": "../assets/wp.svg",
-    "status": "disabled",
+    "status": "active",
     "description": "Bitte kontaktieren uns für die WhatsApp-Gruppe.",
     "addfunc": "console.log('Hello')",
     "calendar": ""
@@ -49,7 +72,41 @@
     "status": "active",
     "style": "width:32px",
     "calendar":""
-  }
+  },
+  { "name":"",
+  "name_de": "Goethe und DAAD Webinar",
+  "name_en": "Goethe and DAAD Webinar",
+  "id": "qverb1",
+  "value": "https://daad-veranstaltung.webex.com/weblink/register/r4ab2b10e2cbb4e8d53380c3bc7fdddf3",
+  "ico_url":
+    "../assets/webex.svg",
+  "status": "active",
+  "style": "width:32px",
+  "calendar":"https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20240417T150000Z%2F20240417T163000Z&details=https%3A%2F%2Fdaad-veranstaltung.webex.com%2Fweblink%2Fregister%2Fr4ab2b10e2cbb4e8d53380c3bc7fdddf3%0A%0A&location=Online&text=Goethe-Institut%20Dil%20Kurslar%C4%B1%2C%20Almanya%27da%20Y%C3%BCksek%C3%B6%C4%9Frenim%20ve%20DAAD%20Burslar%C4%B1"
+},
+  { "name":"",
+    "name_de": "Verben Woche-1",
+    "name_en": "Verbs Week-1",
+    "id": "qverb1",
+    "value": "https://quizlet.com/tr/897677078/verben-woche-1-flash-cards/",
+    "ico_url":
+      "https://assets.quizlet.com/_next/static/media/q-twilight.e27821d9.png",
+    "status": "hidden",
+    "style": "width:32px",
+    "calendar":""
+  },
+  { "name":"",
+  "name_de": "Non-Verben Woche-1",
+  "name_en": "Non-Verbs Week-1",
+  "id": "qnverb1",
+  "value": "https://quizlet.com/tr/897693622/non-verben-woche-1-flash-cards",
+  "ico_url":
+    "https://assets.quizlet.com/_next/static/media/q-twilight.e27821d9.png",
+  "status": "hidden",
+  "style": "width:32px",
+  "calendar":""
+}
+
 ],
 "otherplatforms":[
   {

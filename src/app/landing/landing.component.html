@@ -33,13 +33,12 @@
           <div class="sc-bdfBwQ pkAuV">
             <div class="sc-bdfBwQ sc-kIeTtH jAmcnV cnxSGb"></div>
             <div *ngFor="let button of buttons" class="animate__animated animate__fadeInUp" >
-              <div class="button-complete" style="display: inline-flex; width: 100%;">
+              <div [attr.class]="button.status +' button-complete'" style="width: 100%;">
                 <button
-                  [attr.class]="button.status+' sc-pFZIQ sc-dmlrTW hprkOx fbYVgq group'"
+                  [attr.class]="button.status + ' sc-pFZIQ sc-dmlrTW hprkOx fbYVgq group'"
                   [disabled]="button.status == 'disabled' ? 'true' : null"
                   height="auto"
                   style="
-                    display: inline-flex;
                     padding-bottom: 0px;
                     padding-top: 0px;
                     border: 2px solid;

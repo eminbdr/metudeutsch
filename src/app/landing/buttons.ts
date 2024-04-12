@@ -2,10 +2,6 @@
 class Tools{
   static calendarLinkGenerator(syear:any, smonth:any, sday:any, shour:any, sminute:any, 
     fyear:any, fmonth:any, fday:any, fhour:any, fminute:any, title:any, description:any,location:any){
-
-
-    
-
     return `https://calendar.google.com/calendar/u/0/r/eventedit?text=${title}&dates=${syear}${smonth}${sday}T${shour}${sminute}00/${fyear}${fmonth}${fday}T${fhour}${fminute}00&ctz=Türkiye&details=${description}&location=${location}` 
   }
 }

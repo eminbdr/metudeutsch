@@ -1,0 +1,47 @@
+<div class="starter-kit">
+    <div class="accordion" id="accordionExample" style="display: inline-flex;">
+        <div class="accordion-item" *ngFor="let pos of order">
+          <div class="random_word" style="display: inline-flex;margin-top: 5px;margin-bottom: 5px;width: 100%;" >
+            <button type="button"  (click)="randomWord(pos)" style="margin-inline: 5px;">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16px" height = "16px" class="bi bi-dice-5" viewBox="0 0 16 16">
+                <path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"/>
+                <path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+              </svg>
+            </button>
+           <div style="width: 100%;display: inline-flex;justify-content: space-evenly;color: white;">
+              <div style="align-self: center;">
+                  {{randomWords[pos]["de"]}}
+              </div>
+              <div style="align-self: center;">
+                  {{randomWords[pos]["en"]}}
+              </div>
+           </div>
+          </div>
+          <h2 class="accordion-header ">
+            <button [class]="'accordion-button '+pos.toLowerCase()" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+pos.toLowerCase()" aria-expanded="true" [attr.aria-controls]="'collapse'+pos.toLowerCase()">
+              {{pos}}
+            </button>
+          </h2>
+          <div [id]="'collapse'+pos.toLowerCase()" [class]="'accordion-collapse collapse collapsed ' +pos.toLowerCase()">
+            <div class="line" [id]="'line'+pos.toLowerCase()">
+              <div class="black"  [id]="'black'+pos.toLowerCase()" style="background-color: black; width: 2px; z-index: 1;position: absolute;">
+
+              </div>
+
+            </div>
+
+            <div [class]="'accordion-body '+pos.toLowerCase()" *ngFor="let word of words[pos.toLowerCase()]">
+              <div class="word cont" style="display: inline-flex;">
+                <div class="word de">
+                 {{word.de}}
+                </div>
+
+                <div class="word en">
+                  {{word.en}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

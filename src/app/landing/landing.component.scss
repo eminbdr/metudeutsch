@@ -3,6 +3,8 @@
 img.preview-icon{
     height: 32px;
     width: 32px;
+    align-self: center;
+    align-items: center;
 }
 
 div.translator-flag-cont {
@@ -27,7 +29,10 @@ button.disabled{
   background-color: gray;
 }
 div.hidden{
-  display: none;
+  display: none !important;;
+}
+div.button-complete{
+  display: inline-flex;
 }
 
 p.sc-hKgILt{
@@ -56,6 +61,7 @@ div.w-full.h-full{
   display: inline-flex;
   flex-flow: nowrap;
   width: 100%;
+  align-content: center;
 }
 
 div.animate__animated.animate__fadeInUp{

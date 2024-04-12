@@ -1,0 +1,102 @@
+div.starter-kit {
+  display: inline-flex;
+  padding-inline: 50px;
+  padding-top: 50px;
+  width: 100%;
+  justify-content: center;
+}
+div.pos {
+  padding-inline: 3%;
+}
+
+
+
+li.list-group-item {
+  font-weight: 900;
+  justify-content: center;
+  display: inline-flex;
+}
+
+
+
+
+.accordion{
+  width: 70%;
+  place-content: center;
+  .accordion-item{
+    width: 80%;
+    display: inline-block;
+    margin-right: 10px;
+    color:none;
+    background-color: unset;
+    border: none;
+    .accordion-header{
+      margin:0px;
+      :focus-visible{
+        outline: none;
+      }
+      .accordion-button {
+        color:none;
+        background-color: none;
+        border: none;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-weight: 900;
+        justify-content: space-evenly;
+        
+      }
+    }
+    .accordion-collapse{
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      .accordion-body{
+        background: none;
+      padding: 0.50rem;
+      .word.cont{
+        *{
+          text-wrap: nowrap;
+        }
+        display: inline-flex;
+        justify-content: space-around;
+        width: 100%;
+        .empty{
+          width: 2px;
+          margin-inline: 10px;
+        }
+      }
+
+    }  }
+}
+.noun{
+  background-color: cornsilk;
+}
+.verb{
+  background-color: lightskyblue;
+}
+.adjective{
+  background-color: mediumaquamarine;
+}
+.adverb{
+  background-color: lightpink;
+}
+.preposition{
+  background-color:chartreuse;}
+}
+
+.line {
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+  display:inline-flex;
+}
+
+/* Positioning the line within the accordion body */
+.accordion-body {
+  position: relative;
+}
+
+/* Ensure the line stays behind the content */
+.word {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,72 @@
+<div
+  class="cats"
+  style="
+    width: 100%;
+    display: inline-flex;
+    place-content: center;
+    flex-flow: nowrap;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  "
+>
+  <div
+    class="radio-input-wrapper"
+    style="flex-flow: nowrap; width: 100%;display: inline-flex;justify-content: center;"
+  >
+    <label class="label">
+      <input
+        value="value-2"
+        name="value-radio"
+        id="value-2"
+        class="radio-input"
+        type="radio"
+      />
+      <div class="radio-design"></div>
+      <div class="label-text">Verbs</div>
+    </label>
+    <label class="label">
+      <input
+        value="value-3"
+        name="value-radio"
+        id="value-3"
+        class="radio-input"
+        type="radio"
+      />
+      <div class="radio-design"></div>
+      <div class="label-text">Nouns</div>
+    </label>
+    <label class="label">
+      <input
+        value="value-4"
+        name="value-radio"
+        id="value-4"
+        class="radio-input"
+        type="radio"
+      />
+      <div class="radio-design"></div>
+      <div class="label-text">Phrases</div>
+    </label>
+  </div>
+</div>
+
+<!-- card-generator.component.html -->
+
+<div class="cards-container">
+  <div class="flip-card" *ngFor="let card of cards; let i = index" [ngClass]="{'shown':card.shown,'mock':card.mock,'selected':card.selected}" (click) = "toggleFlip(i)">
+    <div class="flip-card-inner" [ngClass]="{'flipped': card.flipped}">
+      <div class="flip-card-front">
+        <p class="title">FLIP CARD {{i}}</p>
+        <p>Hover Me</p>
+      </div>
+      <div class="flip-card-back">
+        <p class="title">BACK</p>
+        <p>Leave Me</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="navigation">
+  <button (click)="navigate('prev')">Previous</button>
+  <button (click)="navigate('next')">Next</button>
+</div>

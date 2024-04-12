@@ -94,6 +94,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "metudeut:build:production",
+              "serveTarget": "metudeut:serve:production"
+            },
+            "development": {
+              "buildTarget": "metudeut:build:development",
+              "serveTarget": "metudeut:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
