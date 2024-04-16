@@ -1,0 +1,19 @@
+<div class="accordion" id="wortschatz">
+    <div class="accordion-item" *ngFor="let phrasalVerb of phrasalVerbs">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+phrasalVerb.de" aria-expanded="true" [attr.aria-controls]="'collapse'+phrasalVerb.de">
+          <a [attr.href]="'https://www.verbformen.de/suche/verben/?w='+phrasalVerb.de"><div class="word de">{{phrasalVerb.de + ": &nbsp;"}}</div></a>
+          <div class="word en">{{phrasalVerb.en}}</div>
+        </button>
+      </h2>
+      <div [id]="'collapse'+phrasalVerb.de" class="accordion-collapse collapse show" data-bs-parent="#wortschatz">
+        <div class="accordion-body">
+          <ul class="word phrasals" style="text-wrap: nowrap;line-height: 2;">
+            <li *ngFor = "let phrasal of phrasalVerb.phrasals">
+                <a [attr.href]="'https://www.verbformen.de/suche/verben/?w='+phrasal.prefix+phrasalVerb.de"
+                ><p>{{phrasal.prefix}}</p>{{phrasalVerb.de}}</a>: {{phrasal.en}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

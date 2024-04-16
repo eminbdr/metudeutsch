@@ -1,0 +1,160 @@
+[
+  {
+    "de": "kommen",
+    "en": "to come",
+    "phrasals": [
+        {
+            "prefix": "be",
+            "en": "to get, receive"
+        },
+        {
+            "prefix": "an",
+            "en": "to arrive"
+        },
+        {
+            "prefix": "vor",
+            "en": "to happen, occur, seem"
+        },
+        {
+            "prefix": "zurück",
+            "en": "to return"
+        },
+        {
+            "prefix": "herein",
+            "en": "to come in"
+        },
+        {
+            "prefix": "heraus",
+            "en": "to come out"
+        },
+        {
+            "prefix": "zu",
+            "en": "to come towards, be in store"
+        },
+        {
+            "prefix": "her",
+            "en": "to come here"
+        },
+        {
+            "prefix": "auf",
+            "en": "to come up, arise, pay for"
+        },
+        {
+            "prefix": "entgegen",
+            "en": "to come to meet, accommodate"
+        },
+        {
+            "prefix": "aus",
+            "en": "to get by, get on, manage"
+        },
+        {
+            "prefix": "zusammen",
+            "en": "to meet, come together"
+        }
+    ]
+    
+  },
+  {
+    "de": "gehen",
+    "en": "to go",
+    "phrasals":[
+        {
+            "prefix": "ver",
+            "en": "to pass (time)"
+        },
+        {
+            "prefix": "aus",
+            "en": "to go out, assume"
+        },
+        {
+            "prefix": "ein",
+            "en": "to deal with, give attention"
+        },
+        {
+            "prefix": "weiter",
+            "en": "to go on"
+        },
+        {
+            "prefix": "an",
+            "en": "to concern, go on"
+        },
+        {
+            "prefix": "zurück",
+            "en": "to go back, decrease"
+        },
+        {
+            "prefix": "um",
+            "en": "to treat, handle"
+        },
+        {
+            "prefix": "hin",
+            "en": "to go there"
+        },
+        {
+            "prefix": "zu",
+            "en": "to approach, close"
+        },
+        {
+            "prefix": "auf",
+            "en": "to rise, open"
+        },
+        {
+            "prefix": "vorüber",
+            "en": "to pass by"
+        },
+        {
+            "prefix": "vor",
+            "en": "to go on ahead, be fast, have priority"
+        },
+        {
+            "prefix": "über",
+            "en": "to pass into, to ignore"
+        },
+        {
+            "prefix": "hinaus",
+            "en": "to go out, exceed"
+        },
+        {
+            "prefix": "los",
+            "en": "to come off, go off, start"
+        },
+        {
+            "prefix": "weg",
+            "en": "to leave, go away"
+        },
+        {
+            "prefix": "nach",
+            "en": "to follow, pursue, be slow"
+        },
+        {
+            "prefix": "unter",
+            "en": "to go down"
+        },
+        {
+            "prefix": "voran",
+            "en": "to go ahead, make progress"
+        },
+        {
+            "prefix": "be",
+            "en": "to commit, make, celebrate"
+        },
+        {
+            "prefix": "her",
+            "en": "to come from, follow"
+        },
+        {
+            "prefix": "durch",
+            "en": "to go through"
+        },
+        {
+            "prefix": "entgegen",
+            "en": "to escape"
+        },
+        {
+            "prefix": "vorbei",
+            "en": "to go past, pass"
+        }
+    ]
+    
+  }
+]

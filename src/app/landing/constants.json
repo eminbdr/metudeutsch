@@ -29,7 +29,7 @@
 "routerLink": "/crash-course",
 "ico_url": "../assets/Deutsch2.png",
 "style": "background-color: #f5f5f5; color: black;",
-"status": "active",
+"status": "hidden",
 "calendar" : ""
 },
   
@@ -50,7 +50,7 @@
     "ico_url": "../assets/wp.svg",
     "status": "active",
     "description": "Bitte kontaktieren uns für die WhatsApp-Gruppe.",
-    "addfunc": "console.log('Hello')",
+    "addfunc": "",
     "calendar": ""
   },
   { "name":"",

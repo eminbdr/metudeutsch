@@ -33,7 +33,7 @@
           <div class="sc-bdfBwQ pkAuV">
             <div class="sc-bdfBwQ sc-kIeTtH jAmcnV cnxSGb"></div>
             <div *ngFor="let button of buttons" class="animate__animated animate__fadeInUp" >
-              <div [attr.class]="button.status +' button-complete'" style="width: 100%;">
+              <div [attr.class]="button.status +' button-complete'" style="width: 100%;justify-content: end;align-items: center;">
                 <button
                   [attr.class]="button.status + ' sc-pFZIQ sc-dmlrTW hprkOx fbYVgq group'"
                   [disabled]="button.status == 'disabled' ? 'true' : null"
@@ -90,7 +90,8 @@
                     </div>
                   </a>
                 </button>
-                <a *ngIf="button.calendar != ''" target="_blank" [href]="button.calendar" style="align-self: center;"
+                <a *ngIf="button.calendar != ''" target="_blank" [href]="button.calendar" style="position: absolute;
+                right: -30px;"
                   ><img
                   width="32px" height="32px"
                     src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"

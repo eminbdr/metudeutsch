@@ -4,6 +4,7 @@ import { FaqComponent,FaqenComponent } from './faq/faq_base.component';
 import { LandingenComponent } from './landing/landing.component';
 import { StarterkitComponent } from './starterkit/starterkit.component';
 import { RedirectorComponent } from './redirector/redirector.component';
+import { WortschatzComponent } from './wortschatz/wortschatz.component';
 
 
 export const routes: Routes = [
@@ -12,6 +13,6 @@ export const routes: Routes = [
     { path: 'faq', component: FaqComponent },
     { path: 'faq-en', component: FaqenComponent },
     { path: 'starter-kit', component:  StarterkitComponent},
-    { path: 'crash-course',component:RedirectorComponent}
-
+    { path: 'redirector', component: RedirectorComponent},
+    { path: 'wortschatz', component: WortschatzComponent}
 ];
